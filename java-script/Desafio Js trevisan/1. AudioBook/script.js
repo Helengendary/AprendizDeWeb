@@ -21,6 +21,11 @@ function Proximo() {
     titulo.innerHTML = "Capítulo " + atual;
     caminho = "./books/dom-casmurro/" + atual + ".mp3";
     audio.setAttribute("src", caminho)
+
+    if (play) {
+        audio.play();
+    }
+
 }
 
 function Pause(){
