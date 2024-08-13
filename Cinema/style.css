@@ -1,0 +1,65 @@
+body {
+    font-size: 50px;
+    color: white;
+    background-color: #393534;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.cartaz {
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sedes {
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+dl {
+    margin-left: 5%;
+}
+
+dt {
+    margin-top: 3%;
+    color: #D8A609;
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: 1%;
+}
+
+td {
+    padding: 1%;
+}
+
+thead {
+    background-color: black;
+    font-weight: 700;
+    color: #D8A609;
+}
+
+.tabela {
+    font-size: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+h1{
+    margin: 0px;
+}
+
+#titulo{
+    color: #D8A609;
+    font-size: 100%;
+    text-align: center;
+    background-color: black;
+}

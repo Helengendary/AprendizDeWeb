@@ -1,0 +1,28 @@
+body {
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+}
+
+a {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#imagem-gloria {
+    width: 225px;
+    height: 225px;
+}
+
+.musica {
+    text-align: center;
+}
+
+td {
+    padding: 7px;
+}
+
+.list-group-item {
+    margin-bottom: 50px;
+}

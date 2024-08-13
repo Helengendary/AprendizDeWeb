@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    background-color: #B0C4DE;
+}
+
+header {
+    background-color: #9370DB;
+    color: #4B0082;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6rem;
+}
+
+.produto {
+    padding: 2%;
+    margin: 2.8%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

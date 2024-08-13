@@ -1,0 +1,203 @@
+:root {
+    color: white;
+    font-family: "Source Code Pro", monospace;
+}
+
+hr{
+    margin: 0px;
+}
+
+header {
+    background: linear-gradient(to top right, #ca1c1c, rgb(255, 255, 87));
+}
+
+header a {
+    width: 5%;
+}
+
+header a img {
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    background-color: #4276c0;
+
+}
+
+.Logo-cabecalho {
+    display: flex;
+    align-items: center;
+
+    font-size:400%;
+    font-variant:small-caps;
+    font-style: italic;
+    margin-left: 2%;
+}
+
+main {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.apresenta {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.apresenta img {
+    width: 15%;
+    float: left;
+    margin-right: 1%;
+}
+
+.apresenta legend {
+    font-size: 20px;
+}
+
+.apresenta legend strong{
+    font-size: 40px;
+}
+
+.catalogo {
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.catalogo h1 {
+    font-variant: small-caps;
+    font-size: xx-large;
+}
+
+#imagens-catalogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imagens-catalogo a {
+    width: 10%;
+}
+
+#imagens-catalogo a img{
+    width: 100%;
+    margin: 1%;
+}
+
+#legenda-catalogo{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+#imagens-catalogo a img:hover {
+    width: 110%;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.conteudo-familia img {
+    width: 20%;
+}
+
+#familia-principal{
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+details{
+    margin-bottom: 5%;
+}
+
+.spotifa{
+    display: flex;
+    margin-top: 3%;
+}
+
+.musica legend{
+    margin-right: 2%;
+}
+
+
+.musicas-ballon {
+    font-size: 15px;
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 10%;
+}
+
+#album {
+    width: 300px;
+    border-radius: 5px;
+}
+
+#barmusic {
+    width: 50%;
+    margin-top: 1%;
+}
+
+.musicas-ballon legend{
+    margin-top: 1%;
+}
+
+#i2 {
+    display: none;
+}
+#i1:hover {
+    display: none;
+}
+#i1:hover ~#i2 {
+    display: flex;
+}
+#i2:hover {
+    display: flex;
+}
+
+.friends img {
+    width: 20%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    background: linear-gradient(to top right, #ca1c1c, rgb(255, 255, 87));
+    margin-top: 5%;
+    align-items: center;
+}
+
+footer a {
+    width: 5%;
+}
+
+footer img{
+    width: 100%;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filmitos {
+    width: 200px;
+    border: 2px solid white;
+    padding: 1%;
+}
+
+.filmitos img {
+    width: 200px;
+    margin-bottom: 3%;
+}
+
+#comida {
+    width: 50%;
+}

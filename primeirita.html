@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Leiloei</title>
+</head>
+<body>
+    
+    <form type="text" name="" id="Texto" value="Digite seu texto aqui">
+
+        <label for="Nome">Nome: </label> <input type="text" id="Nome"><br>
+        <label for="Texto">Placeholder: </label> <input type="text" id="Texto" placeholder="Digite"><br>
+        <label for="Numero">Número: </label> <input id="Numero" type="number"><br>
+        <label for="Cor">Cor: </label> <input type="color" id="Cor"><br>
+        <label for="Data">Data: </label> <input type="date" id="Data"><br>
+        <label for="DataHora">Data e hora: </label> <input type="datetime-local" id="DataHora"><br>
+        <label for="Mes">Mês: </label><input type="month" id="Mes"><br>
+        <label for="Arquivo">Arquivo: </label><input type="file" id="Arquivo"><br>
+        <label for="Imagem">Imagem: </label><input type="image" id="Imagem"><br>
+        <label for="Email">Email: </label><input type="email" id="Email"><br>
+        <label for="Senha">Senha: </label><input type="password" id="Senha"><br>
+        <label for="Telefone">Telefone: </label><input type="tel" id="Telefone" pattern="([0-9]{2}[0-9{5}-[0-9]{4}])"> <br>
+
+        <input type="range" min="8" max="300" step="10" value="100"><br>
+
+        <fieldset style="width: 100px;">
+            <legend>Opções</legend>
+            <input type="radio" name="OPCAO" value="op1" checked> opcao 1
+            <input type="radio" name="OPCAO" value="op2" > opcao 2
+            <input type="radio" name="OPCAO" value="op3" required> opcao 3 <br>
+        </fieldset>
+            
+        <fieldset style="width: 90px;">
+            <legend>checked</legend>
+            <input type="checkbox" name="OPCAO" value="op1" checked> opcao 1
+            <input type="checkbox" name="OPCAO" value="op2" > opcao 2
+            <input type="checkbox" name="OPCAO" value="op3" required> opcao 3 <br>
+        </fieldset>
+
+        <select name="Cidades">
+            <option value="sp">São Paulo</option>
+            <option value="cwb">Curitiba</option>
+            <option value="rs">Porto Alegre</option>
+        </select> <br>
+
+        <label for="textarea">Observações &hearts;</label>
+        <textarea></textarea> <br><br>
+
+        <details>
+            <summary>Massas</summary>
+            <p><h1>Nhoque</h1>
+                Muito bom!!!!!
+            </p>
+            <p><h1>Lasanha</h1>
+                Delícia!!!!!
+            </p>
+        </details> <br><br>
+
+        <details>
+            <summary>Geyonce</summary>
+            <p><h1>Diva</h1>
+            What u say? She aint no diva
+            </p>
+
+            <p><h1>Pretty Hurts</h1>
+                Brush your hair, fix your teeth, what you wear is all that matters.
+            </p>
+
+            <p><h1>Partition</h1>
+                Hey Ms. Carter!
+            </p>
+        </details> <br> <br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.3149569800285!2d-49.28600371271799!3d-25.494540477473805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb54fa869a29%3A0x73ad2744fd9221!2sMarcelo%20Hot%20Dog%20-%20Avenida%20Brasilia!5e0!3m2!1spt-BR!2sbr!4v1722859282429!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vOTtCjGqXYo?si=UjeC_lwAoQg3rWeL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+
+        <input type="submit">
+
+        <input type="button" name="botao" value="OK"><br>
+    </form>
+
+</body>
+</html>

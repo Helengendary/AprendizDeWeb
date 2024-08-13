@@ -1,0 +1,142 @@
+<style>
+    :root {
+        background-color: tomato;
+        color: white;
+    }
+
+    .calculo {
+        width: 40%;
+        margin-left: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;        
+    }
+    button {
+        width: 20%;
+        margin-top: 3%;
+        height: 30px;
+    }
+
+    input {
+        width: 50%;
+        margin-top: 5%;
+        height: 30px;
+    }
+
+    td button{
+        width: 40px;
+    }
+</style>
+
+<head>
+    <title>Calcular</title>
+</head>
+
+<div class="calculo">
+    <h1>Calculadora</h1>
+    
+    <table>
+        <tr>
+           <td colspan="3" id="conta"></td> 
+        </tr>
+        <tr>
+            <td><button id="numeber1" onclick="add('1')">1</button></td>
+            <td><button id="numeber2"  onclick="add('2')">2</button></td>
+            <td><button id="numeber3" onclick="add('3')">3</button></td>
+        </tr>
+        <tr>
+            <td><button id="numeber4" onclick="add('4')">4</button></td>
+            <td><button id="numeber5" onclick="add('5')">5</button></td>
+            <td><button id="numeber6" onclick="add('6')">6</button></td>
+        </tr>
+        <tr>
+            <td><button id="numeber7" onclick="add('7')">7</button></td>
+            <td><button id="numeber8" onclick="add('8')">8</button></td>
+            <td><button id="numeber9" onclick="add('9')">9</button></td>
+        </tr>
+        <tr>
+            <td>      </td>
+            <td><button id="numeber0" onclick="add('0')">0</button></td>
+            <td>   </td>
+        </tr>
+    </table>
+
+<!-- 
+    <input type="number" id="n1">
+    <input type="number" id="n2"> -->
+    
+    <button onclick="showsoma()">SOMA</button>
+</div>
+
+
+<h1>
+<script>
+    
+    let valores = document.getElementById("conta")
+
+    function mostra(conteudo) {
+        valores.innerHTML = conteudo;
+    };
+
+    console.log("Helenis");
+
+    // const idade = parseInt(prompt("Digite um número"));
+
+// Definir título da página
+    // document.title = prompt('Seu Nome: ', document.title);
+        
+    // let list = [1,2,3,4];
+    // let soma = 0;
+
+    // list.forEach(x => {
+    //     soma +=x
+    // })
+    
+    // function somaLista() {
+    //     mostra("Soma da Lista: " + soma)
+    // };
+
+    function Sum() {
+        const n1 = parseInt(document.getElementById("n1").value);
+        const n2 = parseInt(document.getElementById("n2").value);
+
+        let conta = n1 + n2;
+        
+        alert(conta);
+    }
+
+    let parasomar = 0;
+
+    function add(num) {
+        parasomar += num;
+        valores.innerHTML += num+" ";
+    }
+
+    function showsoma() {
+        parasomar = 0;
+    }
+
+    // mostra(idade);
+    
+    // soma da lista
+
+    // setTimeout(() => {
+    //     let segundo = parseInt(prompt("mais um número:"));
+    //     let conta = idade + segundo;
+    //     mostra(conta);
+    // }, 2000);
+    
+    
+    // setTimeout(() => {
+    //     alert("esse é o timeout")},
+    //     5000
+    // );
+    
+    // setInterval(() => {
+        //     alert("esse é o interval")},
+        //     5000
+        // )
+        
+</script>
+</h1>

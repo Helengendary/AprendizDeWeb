@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            font-family: "Inconsolata", monospace;
+
+        }
+
+        body{
+            margin: 0px;
+        }
+
+        header{
+            background: linear-gradient(to right, 
+               #ff0000,
+               #f39c12,
+               #00aa00,
+               #0072ff,
+               #0000ff);
+            height: 10%;
+            font-variant: small-caps;
+            font-size: 300%;
+            
+            padding: 8px;
+            
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+        .input-cabecalho {
+            display: flex;
+            align-items: center;
+        }
+        
+        #logo {
+            width: 7%;
+        }
+        
+        h3 {
+            unicode-bidi: isolate;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        .livros {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .livro{
+            position: fixed;
+        }
+
+        .livro:hover {
+            width: 10%;
+            padding: 3px;
+            border: 1px solid black;
+        }
+
+        span{
+            font-style: italic;
+        }
+
+        input{
+            padding: 2%;
+            border-radius: 5px; 
+            border: none;
+        }
+        
+        input[type="text"]{
+            border: none;
+            margin-right: 8px; 
+        }
+
+        input[type="submit"]{
+            background-color: red;
+            color: white;
+        }
+
+    /*
+        span::before{
+            content: "-----------------------------";
+        }
+
+        span::after{
+            content: "-----------------------------";
+        } 
+    */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex;align-items: center;">
+            <img src="imagens/bookslogo.png" id="logo" alt="Logo">
+            BookStore
+        </div>
+
+        <nav class="input-cabecalho">
+            <input type="text" placeholder="Digite aqui sua busca">
+            <input type="submit" name="button" id="submit" value="Pesquisar">
+        </nav>
+    </header>
+
+
+    <h3>
+        <span style="line-height: 20px;"> 
+            Livros da Agatha Christie
+        </span>
+        <hr>
+    </h3>
+
+    <div class="livros">
+        <a href="https://harpercollins.com.br/products/o-homem-do-terno-marrom-agatha-christie?variant=45625656311974"><img class="livro" src="imagens/homemternomarrom.avif" alt=""></a>
+        <a href="https://harpercollins.com.br/products/a-mansao-hollow-agatha-christie?variant=45102060503206"><img class="livro" src="imagens/hollow.avif" alt=""></a>
+        <a href="https://harpercollins.com.br/products/depois-do-funeral-agatha-christie?variant=44067573334182"><img class="livro" src="imagens/funeral.avif" alt=""></a>
+        <a href="https://harpercollins.com.br/products/um-crime-adormecido-agatha-christie?variant=44807528448166"><img class="livro" src="imagens/adormecido.avif" alt=""></a>
+    </div>
+</body>
+</html>
