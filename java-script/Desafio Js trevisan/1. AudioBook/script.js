@@ -1,11 +1,12 @@
-let play = false;
 let atual = 1;
+let play = false;
 let audio = document.getElementById("audio-capitulo");
+let bplay = document.getElementById("play-pause");
+
 let caminho = "./books/dom-casmurro/" + atual + ".mp3";
 audio.setAttribute("src", caminho);
 
-
-let titulo = document.getElementById("capitulo")
+let titulo = document.getElementById("capitulo");
 titulo.innerHTML += atual;
 
 function Proximo() {
@@ -27,10 +28,11 @@ function Pause(){
     if (play) {
         audio.pause();
         play = false;
+        bplay.setAttribute("class", "bi-play-circle-fill");
     } else {
-
         audio.play();
         play = true;
+        bplay.setAttribute("class", "bi-pause-circle-fill");
     }
 
 }
