@@ -1,0 +1,107 @@
+
+<style>
+    :root {
+        background-color: tomato;
+        color: white;
+    }
+
+    .calculo {
+        width: 40%;
+        margin-left: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;        
+    }
+    button {
+        width: 20%;
+        margin-top: 3%;
+        height: 30px;
+    }
+
+    input {
+        width: 50%;
+        margin-top: 5%;
+        height: 30px;
+    }
+
+    td button{
+        width: 40px;
+    }
+    
+    .cambio {
+        height: 30px;
+        border: 1px solid white;
+    }
+</style>
+
+<head>
+    <title>Calculer</title>
+</head>
+
+<div class="calculo">
+    <h1>Calculadora</h1>
+    
+    <table>
+        <tr>
+           <td class="cambio" colspan="3" id="conta"></td> 
+        </tr>
+        <tr>
+            <td><button id="numeber1" onclick="add('1')">1</button></td>
+            <td><button id="numeber2"  onclick="add('2')">2</button></td>
+            <td><button id="numeber3" onclick="add('3')">3</button></td>
+            <td><button id="numeber3" onclick="add(' / ')">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="numeber4" onclick="add('4')">4</button></td>
+            <td><button id="numeber5" onclick="add('5')">5</button></td>
+            <td><button id="numeber6" onclick="add('6')">6</button></td>
+            <td><button id="numeber6" onclick="add(' * ')">x</button></td>
+        </tr>
+        <tr>
+            <td><button id="numeber7" onclick="add('7')">7</button></td>
+            <td><button id="numeber8" onclick="add('8')">8</button></td>
+            <td><button id="numeber9" onclick="add('9')">9</button></td>
+            <td><button id="numeber9" onclick="add(' - ')">-</button></td>
+        </tr>
+        <tr>
+            <td><button  onclick="add(' + ')">+</button></td>
+            <td><button id="numeber0" onclick="add('0')">0</button></td>
+            <td><button  onclick="showsoma()">=</button></td>
+            <td><button  onclick="clean()">C</button></td>
+        </tr>
+    </table>
+</div>
+
+
+<h1>
+<script>
+    
+    let somado = false;
+
+    let valores = document.getElementById("conta")
+
+    let parasomar = '';
+
+    function add(num) {
+        if (somado) {
+            valores.innerHTML = '';
+            somado = false;
+        }
+        parasomar += num;
+        valores.innerHTML += num;
+    }
+
+    function showsoma() {
+        valores.innerHTML += " = " + eval(parasomar);
+        parasomar = 0;
+        somado = true;
+    }
+
+    function clean() {
+        parasomar = 0;
+        valores.innerHTML = '';
+    }
+        
+</script>
+</h1>
