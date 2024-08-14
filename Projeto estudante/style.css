@@ -1,0 +1,18 @@
+form {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#tituloColor {
+    font-weight: 800;
+    background: linear-gradient(to right, red, rgb( 255, 0, 127), #9D00FF, #1E90FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropdown {
+    left: 80%;
+}
+.dropdown button {
+    margin-left: 1%;
+}
