@@ -10,26 +10,31 @@
 
  <body>
   <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="mr-2 my-0" id="tituloColor">CONTROLE</h5>
-    <h5 class="my-0 mr-auto"> de Estudantes</h5>
+
+    <a class="mr-auto my-0 linkPrincipal" href="index.html">
+      <h5 class="mr-2 " id="tituloColor">CONTROLE</h5>
+      <h5 class=""> de Estudantes</h5>
+      </a>
+  
     <nav class="my-2 my-md-0 mr-md-3">
         <strong>Cadastrar:</strong>
         <a class="p-2 text-dark" href="cdAlunos.html">Alunos</a>
         |
-        <a class="p-2 text-dark" href="#">Sala</a>
+        <a class="p-2 text-dark" href="cdSala.html">Sala</a>
     </nav>
   </header>
 
 
   <main>
-    <div class="dropdown ">
-        Salas de Aula: 
-        <button class="btn btn-light dropdown-toggle border-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true">Salas</button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">TI</a>
-          <a class="dropdown-item" href="#">Outra ação</a>
-          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
-        </div>
+      <div class="dropdown indexDrop">
+        <label for="exampleFormControlSelect1">Salas de aula:</label>
+        <select class="drops" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
       </div>
 
       <div class="album py-5">
@@ -45,7 +50,7 @@
                   <p class="card-text">Idade: ceo</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Editar</button>
                     </div>
                   </div>
                 </div>
@@ -53,13 +58,12 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="imagens/milena.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="./imagens/milena.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
                 <div class="card-body">
-                  <p class="card-text"></p>
                   <p class="card-text">Idade: e-girl</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Editar</button>
                     </div>
                   </div>
                 </div>
@@ -72,7 +76,7 @@
                   <p class="card-text">Idade: bocuda</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Editar</button>
                     </div>
                   </div>
                 </div>
@@ -86,7 +90,7 @@
                   <p class="card-text">Idade: null</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Editar</button>
                     </div>
                   </div>
                 </div>
@@ -99,7 +103,7 @@
                   <p class="card-text">Idade: 31</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Editar</button>
                     </div>
                   </div>
                 </div>
