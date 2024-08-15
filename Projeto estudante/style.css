@@ -16,3 +16,7 @@ form {
 .dropdown button {
     margin-left: 1%;
 }
+
+.container h1 {
+    text-align: center;
+}
